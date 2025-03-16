@@ -1,12 +1,14 @@
-import Image from "next/image";
-
 export default function Home() {
   return (
-    <div className="border border-solid border-amber-700 h-screen">
-
-    <h1 className="text-3xl font-bold underline bg-amber-400">
-      Hello world!
-    </h1>
+    <div className="h-screen bg-background flex items-center justify-center">
+      <h1 className="text-3xl font-bold underline text-primary">
+        Hello world!
+      </h1>
+      <div>
+        <div className="bg-primary size-4 border"></div>
+        <div className="bg-primary-foreground size-4 border"></div>
+        <div className="bg-background size-4 border"></div>
+      </div>
     </div>
-  )
+  );
 }
